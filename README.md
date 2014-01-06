@@ -1,4 +1,4 @@
-Moder Date Picker
+Modern Date Picker
 ==================
 
 -   [jquery-ui-date-picker.html](jquery-ui-date-picker.html)  ->  jQuery UI Date Picker
