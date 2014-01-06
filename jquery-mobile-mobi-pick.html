@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <title>jQuery Mobile with Mobi Pick</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css"></style>
+    <link rel="stylesheet" type="text/css" href="assets/mobipick.css"></style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.js"></script>
+    <script type="text/javascript" src="assets/xdate.js"></script>
+    <script type="text/javascript" src="assets/xdate.i18n.js"></script>
+    <script type="text/javascript" src="assets/mobipick.js"></script>
+    <script type="text/javascript">
+        $(document).on("pagecreate", function() {
+            $("#date-picker-here").mobipick();
+        });
+    </script>
+</head>
+<body>
+  <div data-role="page" data-add-back-btn="true" class="ui-body-a">
+    <div data-role="header" class="ui-body-a">
+        <h1>jQuery Mobile with Mobi Pick</h1>
+    </div>
+	<div data-role="content" class="ui-body-a">
+        <input id="date-picker-here" />
+    </div>
+  </div>
+</body>
+</html>

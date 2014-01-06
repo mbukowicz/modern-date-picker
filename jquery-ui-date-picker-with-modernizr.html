@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <title>jQuery UI Date Picker with Modernizr</title>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"></style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            var nativeDateInputIsSupported = Modernizr.inputtypes.date;
+            if (!nativeDateInputIsSupported) {
+                $("input[type='date']").datepicker();            
+            }
+        });
+    </script>
+</head>
+<body>
+  <form action="#">
+    <!-- 
+          this will show native date picker if supported, 
+          otherwise it will show jQuery UI Date Picker 
+    -->
+    <input type="date" />
+  </form>    
+</body>
+</html>
